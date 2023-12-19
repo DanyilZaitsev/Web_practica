@@ -1,0 +1,302 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+  /* base styles start */
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, ::after {
+    box-sizing: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+  }
+  /* base styles end */
+
+
+  /* header styles start */
+  .item{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 10px;
+  }
+
+  .wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+
+  .header__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__item {
+    margin-right: 82px;
+  }
+
+  .header__item:last-child {
+    margin-right: 0;
+  }
+
+  .header__link {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+  .header__link:hover, .header__link :focus, .header__link:active {
+    opacity: .75;
+  }
+  /* base styles end */
+
+  /* intro styles start */
+  .intro {
+    height: 100vh;
+    background: url(../img/bg-img.webp);
+    background-size: cover;
+    padding-top: 263px;
+  }
+
+  .intro__title {
+    max-width: 800px;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 22px;
+  }
+
+  .intro__subtitle {
+    color: #FFF;
+    max-width: 700px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 59px;
+  }
+
+  .search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search-form__field {
+    width: 297px;
+    background-color: transparent;
+    background: url(../img/oval-form.png) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #FFF;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+  }
+
+  .search-form__field::placeholder {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+  }
+
+  .search-form__button {
+    padding: 15px;
+    color: #FFF;
+    background-color: black;
+    width: 171px;
+    height: 58px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 10px;
+  }
+
+  .search-form__button:hover, .search-form__button :focus, .search-form__button:active {
+    background: #3c3c3c;
+    border-radius: 10px;
+  }
+  /* intro styles end */
+
+ /* Benefits styles start */
+
+.benefits{
+  margin-bottom: 131px;
+}
+
+.benefits__wrap{
+  max-width: 1262px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  position: relative;
+}
+
+.benefits__title{
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #fff;
+}
+
+.benefits__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding: 0 100px;
+}
+
+.benefits__card{
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.benefits__card-pic{
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+.benefits__card-thumb{
+  display: block;
+}
+
+.benefits__card-title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.benefits__card-desc{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.benefits__card-more{
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(../img/shape.svg) no-repeat 95% center; 
+  transition: .2s all;
+}
+
+.benefits__card-more:hover, .benefits__card-more:focus{
+  background: url(../img/shape.svg) no-repeat right center;
+}
+
+/* Benefits styles end */
+
+.footer{
+  background: #15191b;
+  padding: 119px 0;
+}
+
+.footer__item{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__logo{
+  width: 50%;
+}
+
+.footer__nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.footer__menu-title{
+  color: rgb(112, 112, 112);
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.footer__menu-link{
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+  opacity: .75;
+}
